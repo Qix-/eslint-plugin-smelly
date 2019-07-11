@@ -65,7 +65,9 @@ rule('identical-keyvals', {
 		`const o = {foo}.foo`,
 		`const o = {[foo]: foo}`,
 		`const o = {foo: foo}`,
-		`const o = {foo: foo, bar: 'bar'}`
+		`const o = {foo: foo, bar: 'bar'}`,
+		`const o = {foo: "foo", bar: "bar", qux: null}`,
+		`const o = {foo: "foo", bar: "bar", qux: undefined}`
 	],
 	invalid: [
 		`const o = {foo: 'foo'}`,
