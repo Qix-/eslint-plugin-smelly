@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-smelly",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Find code patterns that might be code smell",
   "repository": "qix-/eslint-plugin-smelly",
   "main": "index.js",
