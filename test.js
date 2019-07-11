@@ -8,7 +8,7 @@ function rule(name, spec) {
 	});
 
 	const lintOpts = spec.opts || {
-		parserOptions: { ecmaVersion: 2015 },
+		parserOptions: { ecmaVersion: 2018 },
 		rules: {[name]: 'error'}
 	};
 
@@ -67,7 +67,8 @@ rule('identical-keyvals', {
 		`const o = {foo: foo}`,
 		`const o = {foo: foo, bar: 'bar'}`,
 		`const o = {foo: "foo", bar: "bar", qux: null}`,
-		`const o = {foo: "foo", bar: "bar", qux: undefined}`
+		`const o = {foo: "foo", bar: "bar", qux: undefined}`,
+		`const o = {foo: "foo", ...{}}`
 	],
 	invalid: [
 		`const o = {foo: 'foo'}`,
