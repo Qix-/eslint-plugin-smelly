@@ -26,7 +26,7 @@ function rule(name, spec) {
 	});
 
 	spec.invalid.forEach(code => {
-		exports[`\x1b[36m${name}\x1b[m :: \x1b[31mWTF\x1b[39m :: ${code}`] = () => {
+		exports[`\x1b[36m${name}\x1b[m :: \x1b[31mSMELLY\x1b[39m :: ${code}`] = () => {
 			const result = linter.verify(code, lintOpts);
 
 			if (result.length === 0) {
